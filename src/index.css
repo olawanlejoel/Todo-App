@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #ddd;
+}
+
+.app-container .header-section {
+	padding: 50px 20px 0;
+}
+
+.date{
+  font-size: 22px;
+}
+
+.date span{
+  font-weight: 400;
+}
+
+.app-form-container{
+  margin: 20px 0;
+  padding: 20px;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.app-form-container form input{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #38D08A;
+  transition: all .5s ease-in-out;
+  background-color: #ddd;
+}
+
+.app-form-container .error{
+  border: 2px solid red;
+  transform: scale(.9);
+}
+
+.app-form-container form input:focus{
+  background-color: rgb(236, 236, 236);
+}
+
+.app-form-container .btn{
+  padding: 10px;
+  background-color: #38D08A;
+  border: none;
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.data-card-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.data-card{
+  padding: 20px;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  flex-basis: 50%;
+}
+
+.data-card:last-child{
+  text-align: right;
+}
+
+.data-card h5{
+  font-size: 18px;
+}
+
+.todo-container{
+  margin: 10px 0;
+  height: 55vh;
+  overflow: scroll;
+  padding: 20px;
+}
+
+.todo-card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.todo-card .icon-done{
+  color: #38D08A;
+}
+
+.todo-card .text-done{
+  color: rgb(112, 112, 112);
+  text-decoration: line-through;
+}
+
+.todo-card .icon{
+  font-size: 26px;
+}
+
+.delete-icon{
+  color: red;
+}
