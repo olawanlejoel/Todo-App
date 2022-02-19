@@ -39,17 +39,13 @@ const App = () => {
 			if (todo.id === id) {
 				todo.complete = !todo.complete;
 			}
-			setTodos([...todos]);
+			return setTodos([...todos]);
 		});
 	};
 
 	useEffect(() => {
 		let completeArray = [];
-		todos.filter((todo) => {
-			if (todo.complete === true) {
-				completeArray.push(todo);
-			}
-		});
+		todos.filter((todo) => todo.complete === true && completeArray.push(todo));
 		setCompletedTasks(completeArray.length);
 	}, [todos]);
 
